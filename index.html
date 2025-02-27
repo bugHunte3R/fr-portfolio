@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- NAVIGATION LATÉRALE RÉDUITE (DESKTOP) -->
+    <nav class="nav-gauche">
+        <div class="portrait">
+            <img src="ressources/profil.png" alt="portrait img">
+        </div>
+
+        <ul class="menu-nav">
+            <li><a href="#accueil"><i class="fas fa-home"></i><span> Accueil</span></a></li>
+            <li><a href="#pres"><i class="fas fa-user"></i><span> Présentation</span></a></li>
+            <li><a href="#port"><i class="fas fa-briefcase"></i><span> Portfolio</span></a></li>
+            <li><a href="#range"><i class="fas fa-chart-bar"></i><span> Compétences</span></a></li>
+            <li><a href="#exp"><i class="fas fa-cogs"></i><span> Expériences</span></a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i><span> Contact</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- MENU MOBILE EN BAS AVEC STYLE ARRONDI -->
+    <div class="menu-mobile">
+        <a href="#accueil" class="menu-item active"><i class="fas fa-home"></i><span>Accueil</span></a>
+        <a href="#pres" class="menu-item"><i class="fas fa-user"></i><span>Présentation</span></a>
+        <a href="#port" class="menu-item"><i class="fas fa-briefcase"></i><span>Portfolio</span></a>
+        <a href="#range" class="menu-item"><i class="fas fa-chart-bar"></i><span>Compétences</span></a>
+        <a href="#exp" class="menu-item"><i class="fas fa-cogs"></i><span>Expériences</span></a>
+    </div>
+
+    <!-- Section Accueil -->
+
+    <section class="accueil" id="accueil">
+        <h1>BIENVENUE SUR MON PORTFOLIO</h1>
+        <p class="txt-animation"></p>
+        <a href="ressources/CV.pdf" class="btn-acc btn-acc1">curriculum vita</a>
+        <a href="#range" class="btn-acc btn-acc2">Compétences</a>
+
+        <div class="medias">
+            <a href="https://www.linkedin.com/in/zakatyacine/" target="blank">
+                <div class="media media2">
+                    <img src="ressources/linkedin.svg" alt="linkedin icone" class="icone-medias">
+                </div>
+            </a>
+
+            <a href="https://github.com/YacineZK" target="blank">
+                <div class="media media1">
+                    <img src="ressources/github.svg" alt="github icone" class="icone-medias">
+                </div>
+            </a>
+            
+            <!-- <a href="https://twitter.com" target="blank">
+                <div class="media media3">
+                    <img src="ressources/twitter.svg" alt="twitter icone" class="icone-medias">
+                </div>
+            </a> -->
+        </div>
+
+        <a href="#pres">
+            <div class="btn-rond">
+                <img src="ressources/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc">
+            </div>
+        </a>
+    </section>
+
+    <!-- Section Présentation -->
+
+<section class="presentation" id="pres">
+    <h2 class="titre-pres">Présentation </h2>
+
+    <div class="container-presentation">
+        <div class="fond-forme"></div>
+
+        <div class="pres-gauche">
+            <h3>Technicien en Informatique et Réseaux</h3>
+            <hr>
+            <p>Technicien informatique diplômé, spécialisé en résolution de problèmes et en maintenance système, je recherche un rôle où je peux utiliser mes compétences polyvalentes pour garantir un fonctionnement optimal des systèmes informatiques. Je suis motivé à contribuer à l'amélioration continue des processus et à fournir un support technique de qualité.</p>
+            <br>
+            <h4>Compétences</h4>
+            <p>
+                - Administration Système (Linux, Windows) <br/>
+                - Virtualisation (VMware, Hyper-V) <br/>
+                - Déploiement de solutions de gestion d'inventaire (Snipe-IT) <br/>
+                - Gestion de serveurs (Odoo, GLPI) <br/>
+                - Docker et Portainer <br/>
+                - Réseaux et Sécurité (Cloudflare, VPN) <br/>
+                - Automatisation et scripts (Python, Bash) <br/>
+            </p>
+        </div>
+        
+        <div class="pres-droite">
+            <ul class="liste-presentation">
+                <li class="item-liste i1">
+                    <span class="chiffre-style">1.</span>
+                    <p class="txt-liste">Administration Système</p>
+                </li>
+                <li class="item-liste i2">
+                    <span class="chiffre-style">2.</span>
+                    <p class="txt-liste">Virtualisation</p>
+                </li>
+                <li class="item-liste i3">
+                    <span class="chiffre-style">3.</span>
+                    <p class="txt-liste">Réseaux & Sécurité</p>
+                </li>
+                <li class="item-liste i4">
+                    <span class="chiffre-style">4.</span>
+                    <p class="txt-liste">Gestion des Applications</p>
+                </li>
+                <li class="item-liste i5">
+                    <span class="chiffre-style">5.</span>
+                    <p class="txt-liste">Automatisation & Scripts</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- Section Portfolio -->
+
+<!-- Section Portfolio -->
+<section class="portfolio" id="port">
+    <h2 class="titre-port">Mon Portfolio</h2>
+    <div class="cont-portfolio">
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/drbl.jpg" alt="img portfolio">
+            </div>
+            <h3>DRBL + NFS : Déploiement et Clonage de Systèmes en Réseau avec SysPrep</h3>
+            <p>Ce projet implémente un serveur DRBL avec un stockage centralisé via NFS pour le démarrage PXE des clients, l'utilisation de Clonezilla pour le clonage et la restauration d'images disque, ainsi que l'intégration de SysPrep pour préparer les systèmes Windows et supprimer les SID (Security Identifiers). Cette approche permet un déploiement à grande échelle, une centralisation des sauvegardes, et une automatisation du processus, facilitant ainsi la gestion des systèmes Windows clonés.</p>
+            <a href="#" target="_blank" class="btn-projets">Découvrez le projet</a>
+        </div>
+
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources//odoo.png" alt="img portfolio">
+            </div>
+            <h3>Odoo : Système de Gestion Intégrée pour PME au Maroc</h3>
+            <p>Ce projet a consisté à déployer Odoo pour une petite entreprise au Maroc, avec pour objectif d'automatiser et de centraliser la gestion des ventes, achats, stocks et comptabilité. J'ai personnalisé les modules pour répondre aux besoins spécifiques de l'entreprise, permettant ainsi une gestion plus efficace et une meilleure visibilité sur les opérations quotidiennes. Odoo a facilité la prise de décision en temps réel et amélioré la productivité générale.</p>
+            <a href="https://odoo.sync-orbit.com" target="_blank" class="btn-projets">Découvrez le projet</a>
+        </div>
+
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/glpi.png" alt="img portfolio">
+            </div>
+            <h3>GLPI : Gestion de Parc Informatique et Helpdesk</h3>
+            <p>Ce projet a consisté à déployer GLPI pour gérer le parc informatique et le support technique d'une entreprise. J'ai configuré le système pour faciliter le suivi des équipements, des demandes de support et des interventions. GLPI permet à l'entreprise de centraliser les informations, de gérer les incidents et d'optimiser l'utilisation des ressources informatiques, tout en améliorant la réactivité et la traçabilité des demandes de support.</p>
+            <a href="#" target="_blank" class="btn-projets">Découvrez le projet</a>
+        </div>
+
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/proxmox.png" alt="img portfolio">
+            </div>
+            <h3>Cluster Proxmox : Déploiement d'Applications et Virtualisation</h3>
+            <p>Ce projet a consisté à déployer un cluster Proxmox pour héberger et gérer plusieurs applications, telles qu'Odoo et GLPI, ainsi que d'autres services. J'ai configuré le cluster pour assurer une haute disponibilité, une gestion centralisée et une virtualisation efficace des ressources. Ce système permet de déployer, gérer et sécuriser les applications tout en optimisant l'utilisation des serveurs physiques, garantissant ainsi une infrastructure fiable et scalable.</p>
+            <a href="#" target="_blank" class="btn-projets">Découvrez le projet</a>
+        </div>
+
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/docker.png" alt="img portfolio">
+            </div>
+            <h3>Docker & Portainer : Gestion de Conteneurs et Orchestration</h3>
+            <p>Ce projet a consisté à déployer Docker et Portainer pour simplifier la gestion des conteneurs d'applications. J'ai configuré Docker pour déployer des applications dans des conteneurs isolés, et utilisé Portainer pour fournir une interface graphique afin de gérer ces conteneurs de manière intuitive. Cette solution permet de déployer, gérer et scaler les applications facilement tout en assurant une portabilité et une efficacité accrues des ressources.</p>
+            <a href="#" target="_blank" class="btn-projets">Découvrez le projet</a>
+        </div>
+
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/snipeit.jpg" alt="img portfolio">
+            </div>
+            <h3>Snipe-IT : Gestion de Parc Informatique</h3>
+            <p>Ce projet a consisté à déployer Snipe-IT pour la gestion du parc informatique d'une entreprise. J'ai configuré le système pour suivre l'inventaire des équipements, gérer les utilisateurs et attribuer des ressources de manière efficace. Snipe-IT permet à l'entreprise de centraliser les informations sur les actifs, d'optimiser leur gestion et de garantir une traçabilité complète des équipements, tout en facilitant la gestion des renouvellements et des maintenances.</p>
+            <a href="#" target="_blank" class="btn-projets">Découvrez le projet</a>
+        </div>
+        
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/cloudflare.png" alt="img portfolio">
+            </div>
+            <h3>Cloudflare Zero Trust : Sécurisation de l'Accès au Réseau</h3>
+            <p>Ce projet a consisté à déployer Cloudflare Zero Trust pour sécuriser l'accès aux applications et aux ressources du réseau d'entreprise. J'ai configuré une solution de sécurité basée sur l'identité, permettant de valider l'authenticité des utilisateurs avant de leur accorder l'accès. Cloudflare Zero Trust permet de protéger les applications contre les menaces externes et internes, tout en garantissant une expérience fluide et sans friction pour les utilisateurs autorisés.</p>
+            <a href="#" target="_blank" class="btn-projets">Découvrez le projet</a>
+        </div>
+        
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/OpenVPN_logo.svg.png" alt="img portfolio">
+            </div>
+            <h3>Serveur VPN : Sécurisation des Connexions à Distance</h3>
+            <p>Ce projet a consisté à déployer un serveur VPN pour sécuriser les connexions à distance des employés et garantir l'accès sécurisé aux ressources internes de l'entreprise. J'ai configuré le serveur VPN pour offrir un tunnel chiffré, protégeant ainsi les données sensibles pendant les échanges et permettant un accès sécurisé aux réseaux internes, peu importe l'emplacement. Cette solution garantit la confidentialité et l'intégrité des données tout en offrant une flexibilité accrue pour le travail à distance.</p>
+            <a href="#" target="_blank" class="btn-projets">Découvrez le projet</a>
+        </div>
+
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/alarm.jpg" alt="img portfolio">
+            </div>
+            <h3>Système d'Alarme avec Raspberry Pi et Breadboard</h3>
+            <p>Ce projet a consisté à créer un système d'alarme simple mais personnalisable, basé sur un Raspberry Pi et une breadboard. J'ai configuré un circuit avec des boutons pour activer et désactiver l'alarme, ainsi qu'un compte à rebours (countdown) pour ajouter une couche de sécurité. Les utilisateurs peuvent interagir avec le système à travers un affichage 7 segments et ajuster le compte à rebours à l'aide de boutons pour augmenter ou diminuer le temps. Lorsque l'alarme est activée, un haut-parleur émet un son pour alerter de la situation. Ce projet a été entièrement programmé en Python pour assurer une gestion fluide et réactive de l'alarme.</p>
+            <a href="#" target="_blank" class="btn-projets">Découvrez le projet</a>
+        </div>
+        
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/mern.jpg" alt="img portfolio">
+            </div>
+            <h3>Site Web de E-Commerce avec MERN</h3>
+            <p>Ce projet a consisté à développer un site web de e-commerce complet utilisant la stack MERN (MongoDB, Express, React, Node.js). J'ai conçu une plateforme fluide permettant aux utilisateurs de parcourir des produits, d'ajouter des articles à leur panier et de finaliser leurs achats en toute sécurité. Le backend est alimenté par Node.js et Express, tandis que le frontend utilise React pour offrir une expérience utilisateur dynamique et réactive. MongoDB est utilisé pour stocker les informations sur les produits et les utilisateurs. Ce projet inclut également une gestion des commandes, des paiements et des fonctionnalités d'administration pour gérer les produits et les utilisateurs.</p>
+            <a href="#" target="_blank" class="btn-projets">Découvrez le projet</a>
+        </div>
+
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/raspberry.png" alt="img portfolio">
+            </div>
+            <h3>Serveur Web avec Raspberry Pi</h3>
+            <p>Dans ce projet, j'ai configuré un Raspberry Pi comme serveur web pour héberger différents services, y compris un site web et des applications. J'ai utilisé Apache pour le serveur web et PHP pour les scripts dynamiques. Le Raspberry Pi a été configuré pour être accessible à distance en toute sécurité via Cloudflare Tunnel, sans exposer l'adresse IP publique, garantissant ainsi la sécurité des connexions. Ce projet m'a permis de travailler sur la gestion de serveurs légers, l'automatisation du déploiement et la sécurisation de l'accès à distance pour des projets personnels et professionnels.</p>
+            <a href="#" target="_blank" class="btn-projets">Découvrez le projet</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Section Range -->
+
+<section class="section-range" id="range">
+    <h2 class="titre-exp">Mes compétences</h2>
+    <div class="grille-skill">
+        <div class="range-cont">
+            <p class="label-skill">Linux (Administration)</p>
+            <p class="number-skill">90%</p>
+            <div class="barre-skill b1"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">Proxmox (Virtualisation)</p>
+            <p class="number-skill">100%</p>
+            <div class="barre-skill b2"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">Docker & Portainer</p>
+            <p class="number-skill">100%</p>
+            <div class="barre-skill b3"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">Python</p>
+            <p class="number-skill">90%</p>
+            <div class="barre-skill b4"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">Gestion de Serveurs (Windows/Linux)</p>
+            <p class="number-skill">100%</p>
+            <div class="barre-skill b5"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">Odoo (ERP)</p>
+            <p class="number-skill">100%</p>
+            <div class="barre-skill b6"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">GLPI (Gestion des Tickets)</p>
+            <p class="number-skill">100%</p>
+            <div class="barre-skill b7"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">Sécurisation des Réseaux</p>
+            <p class="number-skill">100%</p>
+            <div class="barre-skill b8"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">Cloudflare (Zero Trust)</p>
+            <p class="number-skill">100%</p>
+            <div class="barre-skill b9"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">Full Stack MERN</p>
+            <p class="number-skill">90%</p>
+            <div class="barre-skill b10"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">JavaScript & VBScript</p>
+            <p class="number-skill">90%</p>
+            <div class="barre-skill b11"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">Azure & Active Directory</p>
+            <p class="number-skill">100%</p>
+            <div class="barre-skill b12"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">Microsoft 365</p>
+            <p class="number-skill">100%</p>
+            <div class="barre-skill b13"></div>
+            <div class="barre-grises"></div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="travail-exp" id="exp">
+
+    <h2 class="titre-travail-exp">Mes expériences</h2>
+
+    <div class="cont-exp-travail">
+        <div class="flex-cont-bloc-exp">
+            
+            <!-- Expérience 1 -->
+            <div class="bloc-exp">
+    <div class="barre-verticale"></div>
+    <div class="boule-ico"></div>
+    <div class="bloc">
+        <div class="contenu-bloc">
+            <p class="titre-section-bloc">Technicien Informatique et Réseaux - Usine de Congélation de Saint-Bruno (12 mois)</p>
+            
+            <p class="txt-section">
+                En tant que technicien informatique, je suis responsable de la gestion et de l’optimisation de l’infrastructure informatique et réseau de l’entreprise.  
+                Mon rôle comprend :
+            </p>
+
+            <p class="txt-section">
+                🔹 **Administration et gestion des systèmes** : <br>
+                → **Active Directory (AD)**, **Intune**, **vSphere** pour la gestion des utilisateurs, des groupes et des stratégies de sécurité.<br>
+                → **Netbox** pour la documentation réseau et la gestion des adresses IP.<br>
+                → **Datto RMM** pour la gestion et la supervision des appareils à distance.
+            </p>
+
+            <p class="txt-section">
+                🔹 **Support IT et gestion des tickets** : <br>
+                → Utilisation de **IT-Jira Ticket** et **GLPI** pour le suivi et la résolution des incidents.<br>
+                → **Auto Elevate** pour gérer les privilèges administratifs et renforcer la sécurité.
+            </p>
+
+            <p class="txt-section">
+                🔹 **Sécurité et supervision réseau** : <br>
+                → **FieldEffect** pour la cybersécurité et la surveillance des menaces.<br>
+                → **Unifi Network** pour la gestion des infrastructures Wi-Fi et réseau.
+            </p>
+
+            <p class="txt-section">
+                🔹 **Solutions cloud et gestion d'affichage** : <br>
+                → **Letsignit** pour la gestion des signatures email.<br>
+                → **XMS Cloud** et **Xibo Digital Signage** pour l'affichage dynamique.<br>
+                → **Bartender Designer** pour l’impression et la gestion des étiquettes industrielles.
+            </p>
+
+            <p class="txt-section">
+                Grâce à ces outils et mon expertise, j’ai pu **moderniser et sécuriser** l’infrastructure informatique de l’usine, en améliorant l’efficacité des opérations et en réduisant les risques. 🚀
+            </p>
+        </div>
+    </div>
+</div>
+
+
+            <!-- Expérience 2 -->
+            <div class="bloc-exp">
+                <div class="barre-verticale"></div>
+                <div class="boule-ico"></div>
+                <div class="bloc">
+                    <div class="contenu-bloc">
+                        <p class="titre-section-bloc">Proxmox (Virtualisation & Clustering)</p>
+                        <p class="txt-section">
+                            J'ai déployé un **cluster Proxmox** pour héberger plusieurs applications critiques comme **Odoo et GLPI**. Ce projet m'a permis de :
+                        </p>
+                        <p class="txt-section">
+                            🔹 Maîtriser l’orchestration de **machines virtuelles et containers**.  
+                            🔹 Assurer une **haute disponibilité** et sécuriser l'infrastructure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expérience 3 -->
+            <div class="bloc-exp">
+                <div class="barre-verticale"></div>
+                <div class="boule-ico"></div>
+                <div class="bloc">
+                    <div class="contenu-bloc">
+                        <p class="titre-section-bloc">Docker & Portainer</p>
+                        <p class="txt-section">
+                            J'ai utilisé **Docker** et **Portainer** pour déployer des applications comme **Odoo et GLPI**. Cette approche a permis :
+                        </p>
+                        <p class="txt-section">
+                            🔹 Une **gestion efficace et scalable** des containers.  
+                            🔹 Une **simplification des mises à jour et déploiements** en production.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expérience 4 -->
+            <div class="bloc-exp">
+                <div class="barre-verticale"></div>
+                <div class="boule-ico"></div>
+                <div class="bloc">
+                    <div class="contenu-bloc">
+                        <p class="titre-section-bloc">Odoo (ERP)</p>
+                        <p class="txt-section">
+                            J’ai installé et personnalisé **Odoo** pour optimiser la gestion d’une entreprise :
+                        </p>
+                        <p class="txt-section">
+                            🔹 **Automatisation des processus** (stocks, ventes, achats, comptabilité).  
+                            🔹 **Personnalisation des modules** pour répondre aux besoins spécifiques.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expérience 5 -->
+            <div class="bloc-exp">
+                <div class="barre-verticale"></div>
+                <div class="boule-ico"></div>
+                <div class="bloc">
+                    <div class="contenu-bloc">
+                        <p class="titre-section-bloc">GLPI (Gestion des Tickets & Inventaire)</p>
+                        <p class="txt-section">
+                            Mise en place de **GLPI** pour une gestion centralisée des tickets et des actifs informatiques :
+                        </p>
+                        <p class="txt-section">
+                            🔹 **Optimisation du support IT** avec suivi des demandes en temps réel.  
+                            🔹 **Suivi efficace des équipements** pour une gestion simplifiée.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expérience 6 -->
+            <div class="bloc-exp">
+                <div class="barre-verticale"></div>
+                <div class="boule-ico"></div>
+                <div class="bloc">
+                    <div class="contenu-bloc">
+                        <p class="titre-section-bloc">Sécurisation des Réseaux avec Cloudflare</p>
+                        <p class="txt-section">
+                            🔹 Mise en place de **Cloudflare Zero Trust** pour protéger l’accès aux services hébergés.  
+                            🔹 Configuration des **tunnels sécurisés** pour éviter l’exposition de l’IP publique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+<!-- Section Parallax -->
+
+<div class="section-parallax">
+    <p class="txt-par">
+        
+    </p>
+    <p class="txt-par">
+        
+    </p>
+    <p class="txt-par">
+        
+    </p>
+</div>
+
+
+<!-- Section Contact -->
+
+<section class="section-contact" id="contact">
+
+    <h2><strong>Rentrons</strong> en Contact</h2>
+
+    <div class="container-form">
+
+        <form class="form-bloc" action="https://formspree.io/f/mvonnzqj" method="POST">
+
+            <div class="form-groupe">
+                <label for="prenom">Prénom</label>
+                <input type="text" required maxlength="16" id="prenom" name="prenom">
+            </div>
+            <div class="form-groupe">
+                <label for="nom">Nom</label>
+                <input type="text" required maxlength="16" id="nom" name="nom">
+            </div>
+            <div class="form-groupe">
+                <textarea id="txt" placeholder="Votre message" name="message" required></textarea>
+            </div>
+
+            <div class="form-groupe">
+                <input type="submit" value="ENVOYER" class="button-sub" >
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2025 Zakat Yacine. Tous droits réservés.
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
