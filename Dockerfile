@@ -1,11 +1,17 @@
-# Utilisez l'image officielle de NGINX
+# Utiliser l'image officielle de Nginx
 FROM nginx:alpine
 
-# Copiez tous les fichiers dans le répertoire de travail du conteneur
+# Supprime la configuration par défaut de Nginx
+RUN rm /etc/nginx/conf.d/default.conf
+
+# Copie le fichier de configuration personnalisé
+COPY nginx.conf /etc/nginx/conf.d/
+
+# Copie tout le projet (HTML, CSS, JS, images)
 COPY . /usr/share/nginx/html
 
-# Copiez la configuration nginx (si vous avez une configuration personnalisée)
-# COPY nginx.conf /etc/nginx/nginx.conf
-
-# Exposez le port 80
+# Expose le port 80
 EXPOSE 80
+
+# Lance Nginx
+CMD ["nginx", "-g", "daemon off;"]
